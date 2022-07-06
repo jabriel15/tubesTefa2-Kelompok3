@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>I-Coffee | Menu</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="container header ">
+      <!-- Navbar -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>I-Coffee</h2>
+        </div>
+
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
+
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="index.html" class="nav_menu_link">Home</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="menu.html" class="nav_menu_link">Menu</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="vip.html" class="nav_menu_link">VIP</a>
+            </li>
+            <!-- Order Button -->
+            <li class="cart">
+              <button type="button" class="btn submit_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <span>0 </span> Pay Items
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Menu Makanan -->
+    <section class="makanan">
+      <p class="desc_makanan">
+        Menu Makanan :            
+      </p>
+      <div class="col-20">
+       <div class="product-container">
+        <div class="card-1">
+            <div class="image-1">
+                <img src="img/makanan1.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="brand-1" id="makanan1">Mie Goreng</h2>
+                <p class="short-des-1">mie goreng + cabai + sayuran + telor orak arik</p>
+                <p class="price-1" id="harga" style="text-decoration-thickness: 20px;">Rp.20000</p>
+                <a class="add-cart cart1" href="#" onclick="location.reload();">Add cart</a>
+            </div>
+        </div>
+        <div class="col-20">
+            <div class="card-2">
+              <div class="image-2">
+                  <img src="img/makanan2.png" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="brand-2" id="makanan2">Mie Kuah</h2>
+                  <p class="short-des-2">mie + bakso + sambel + bumbu lain</p>
+                  <p class="price-1" id="harga" style="text-decoration-thickness: 20px;">Rp.22000</p>
+                  <a class="add-cart cart2" href="#" onclick="location.reload();">Add cart</a>
+              </div>
+        </div>
+       </div>
+       </div>
+      </section>
+      <!-- Akhir Makanan -->
+
+      <!-- Menu Minuman -->
+      <section class="minuman">
+      <p class="desc_makanan">
+        Menu Minuman :            
+      </p>
+      <div class="col-20">
+        <div class="product-container">
+         <div class="card-1">
+             <div class="image-1">
+                 <img src="img/minuman1.jpeg" class="product-thumb" alt="">
+             </div>
+             <div class="product-info">
+                 <h2 class="brand-1" id="minuman1">Iced Coffeemilk</h2>
+                 <p class="short-des-1">Campuran Kopi,susu dan es yang dingin siap menyegarkan hari yang panas</p>
+                 <p class="price-1" id="harga" style="text-decoration-thickness: 20px;">Rp.15000</p>
+                 <a class="add-cart cart3" href="#" onclick="location.reload();">Add cart</a>
+
+             </div>
+         </div>
+         <div class="col-20">
+             <div class="card-2">
+               <div class="image-2">
+                   <img src="img/minuman2.jpg" class="product-thumb" alt="">
+               </div>
+               <div class="product-info">
+                   <h2 class="brand-2" id="minuman2">Americano</h2>
+                   <p class="short-des-2">Kopi Arabica pilihan terbaik yang hangat dan kandungan cafein siap menghilangkan kantuk</p>
+                   <p class="price-1" id="harga" style="text-decoration-thickness: 20px;">Rp.19000</p>
+                  <a class="add-cart cart4" href="#" onclick="location.reload();">Add cart</a>
+
+               </div>
+         </div>
+        </div>
+      </div>
+    </section>
+      <!-- Akhir Minuman -->
+
+      <!-- Pay Modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Payment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-products">
+                <div class="product-header">
+                  <h5 class="product-title">Menu</h5>
+                  <h5 class="price">Harga</h5>
+                  <h5 class="quantity">Qty</h5>
+                  <h5 class="total">Total</h5>
+                </div>
+                <div class="products">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="return hapus()">Cancel</button>
+              <button type="button" class="btn btn-primary" onclick="return bayar()">Pay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Ion-Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="js/regular.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>I-Coffee | VIP</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="container header ">
+      <!-- Navbar -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>I-Coffee</h2>
+        </div>
+
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
+
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="index.html" class="nav_menu_link">Home</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="menu.html" class="nav_menu_link">Menu</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="vip.html" class="nav_menu_link">VIP</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="grid-cols-2">
+          <div class="grid-item-1">
+            <h1 class="main_heading">
+              Masukkan Nomor <span>VIP</span>
+            </h1>
+            <!-- Form id -->
+            <form id="form" class="vipForm" action="menuvip.html" method="post" onsubmit="return validate()">
+              <input class="form-control form-control-sm" id="novip" type="text" placeholder="Masukkan 6 digit angka" autocomplete="off">
+              <input class="btn submit_btn" type="submit" name="" >
+            </form>
+          </div>
+          <div class="grid-item-2">
+            <div class="img_wrapper">
+              <img src="img/main.png" alt="coffee">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Home -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <!-- Main JS -->
+    <script src="js/script.js" async></script>
+  </body>
+</html>
