@@ -33,16 +33,17 @@ Website ini dibuat dengan menggunakan:
 | HTML5      | Hyper Text Markup Language                |
 | CSS3       | Cascading Style Sheets                    |
 | JavaScript | High Level, Dynamic, Interpreted Language |
+| Bootstrap5 | framework HTML, CSS, dan JavaScript       |  
 
 
 ## Instalation
 Clone Repository ini dengan cara:<br>
 
 ```
-git clone https://github.com/jabriel15/TuBes-Chapter2-Kelompok3.git
+git clone https://github.com/jabriel15/tubesTefa2-Kelompok3.git
 ```
 
-Buka file index.html di dalam folder Web I-Coffee
+Buka file index.html di dalam folder tubesTeFa2-Kelompok3
 
 
 ## Screnshoots
@@ -60,6 +61,10 @@ Buka file index.html di dalam folder Web I-Coffee
 
 #### Menu
 <img src="img/menu.png">
+<br><br>
+
+#### Payment
+<img src="img/payment.png">
 
 ## Credit
 >Adhi Puspo Hadikusumo <br>
