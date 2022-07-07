@@ -30,13 +30,13 @@ let products = [
     {
         name: 'Iced Coffeemilk',
         tag: 'icedcoffee',
-        price: 13000,
+        price: 13500,
         inCart: 0
     },
     {
         name: 'Americano',
         tag: 'americano',
-        price: 16000,
+        price: 17000,
         inCart: 0
     }
 ]
@@ -48,6 +48,7 @@ for (let i=0; i < carts.length; i++) {
     })
 }
 
+// mengecek item di local storage
 function onLoadCartNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -56,7 +57,7 @@ function onLoadCartNumbers(){
     }
 }
 
-
+// Nomor di cart
 function cartNumbers(product) {
     let productNumbers = localStorage.getItem('cartNumbers');
     
