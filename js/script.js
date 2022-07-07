@@ -2,7 +2,7 @@
 // Validation Id VIP
 function validate() {
     var novip=document.forms['form']['novip'];
-    if(novip.value.length != 6) {
+    if(novip.value != 654321) {
         alert("Id yang kamu masukkan salah!");
         return false;
     }
